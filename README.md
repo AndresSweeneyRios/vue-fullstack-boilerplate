@@ -1,24 +1,24 @@
 # vue-fullstack
 
-## Project setup
+## prerequisites
+- node.js
+- npm
+- yarn
+
+## commands
+
+### build project & start in production mode
 ```
-yarn install
+yarn start
 ```
 
-### Compiles and hot-reloads for development
+### start in development Mode
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+yarn dev
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Express
+- Pug + SASS
+- PWA Support
+- ESLint configured for error prevention
+- Included metadata configuration for better SEO
