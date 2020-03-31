@@ -1,0 +1,4 @@
+{
+  "verbose": false,
+  "ignore": ["src", "public", "dist", "node_modules", "vue.config.js"]
+}
