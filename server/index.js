@@ -25,4 +25,4 @@ if (NODE_ENV !== 'development') {
 
 app.listen(port)
 
-console.log(`\n${chalk.bgGreen.black(' SERVER ')} ${chalk.bold(`Listening on port ${port}`)}`)
+console.log(`\n${chalk.bgGreen.black(' SERVER ')} ${chalk.bold(`Listening on port ${port}`)}\n`)

@@ -1,13 +1,13 @@
 {
   "name": "vue-fullstack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "express:start": "node server/index.js",
     "express:dev": "cross-env NODE_ENV=development nodemon server/index.js",
     "vue:serve": "vue-cli-service serve",
     "vue:build": "cross-env NODE_ENV=development vue-cli-service build",
-    "dev": "concurrently -r \"yarn:vue:serve\" \"yarn:express:dev\"",
+    "dev": "multiscript yarn vue:serve + yarn express:dev",
     "start": "yarn run vue:build && yarn run express:start",
     "lint": "vue-cli-service lint"
   },
@@ -27,11 +27,11 @@
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-plugin-vuex": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
-    "concurrently": "^5.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
+    "multiscript": "^0.1.8",
     "node-sass": "^4.12.0",
     "nodemon": "^2.0.2",
     "pug": "^2.0.4",
